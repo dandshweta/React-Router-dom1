@@ -28,53 +28,55 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // import WithUserefLoginForm from "./loginForm/WithUserefLoginForm";
 // import OtpCreate from "./create/OtpCreate";
 // import OTPdisplay from "./create/OTPdisplay";
-import Otp from "./otp-task/Otp";
-// const router = createBrowserRouter([
-// {
-//   path: "/aboutus",
-//   element: <AboutUs />,
-// },
-// {
-//   path: "/contactus",
-//   element: <ContactUs />,
-// },
-// {
-//   path: "/homepage",
-//   element: <HomePage />,
-// },
-// {
-//   path: "/",
-//   element: <MyProducts />,
-// },
-// {
-//   path: "/product/:id",
-//   element: <ProductDetails />,
-// },
-// {
-//   path: "/",
-//   element: <ProductInfo />,
-// },
-// {
-//   path: "/product/:id",
-//   element: <ProductList />,
-// },
-// {
-//   path: "/",
-//   element: <ProductInfoDetail />,
-// },
-// {
-//   path: "/product/:itemid",
-//   element: <Product />,
-// },
-// {
-//   path: "/",
-//   element: <QueryParams />,
-// },
-// {
-//   path: "/",
-//   element: <ProductFetch />,
-// },
-// ]);
+// import Otp from "./otp-task/Otp";
+import Props from "./Props/props";
+// import OtpCreate from "./create/otp5";
+const router = createBrowserRouter([
+  // {
+  //   path: "/aboutus",
+  //   element: <AboutUs />,
+  // },
+  // {
+  //   path: "/contactus",
+  //   element: <ContactUs />,
+  // },
+  // {
+  //   path: "/homepage",
+  //   element: <HomePage />,
+  // },
+  // {
+  //   path: "/",
+  //   element: <MyProducts />,
+  // },
+  // {
+  //   path: "/product/:id",
+  //   element: <ProductDetails />,
+  // },
+  // {
+  //   path: "/",
+  //   element: <ProductInfo />,
+  // },
+  // {
+  //   path: "/product/:id",
+  //   element: <ProductList />,
+  // },
+  // {
+  //   path: "/",
+  //   element: <ProductInfoDetail />,
+  // },
+  // {
+  //   path: "/product/:itemid",
+  //   element: <Product />,
+  // },
+  // {
+  //   path: "/",
+  //   element: <QueryParams />,
+  // },
+  // {
+  //   path: "/",
+  //   element: <ProductFetch />,
+  // },
+]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <>
@@ -93,8 +95,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     {/* <WithUserefLoginForm /> */}
     {/* <OtpCreate /> */}
     {/* <OTPdisplay /> */}
-    <Otp />
-
-    {/* <RouterProvider router={router} /> */}
+    {/* <Otp /> */}
+    {/* <OtpCreate /> */}
+    <RouterProvider router={router} />
+    <Props />
   </>
 );
