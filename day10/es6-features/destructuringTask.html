@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  const order = {
+    id: 1011,
+    productName: "iPhone 14 Pro Max",
+    brandDetails: {
+      brandName: "Apple",
+      origin: "USA",
+      assembledIn: "India",
+    },
+    price: 145000,
+    condition: "New",
+  };
+
+  const { brandName, origin, assembledIn } = order.brandDetails;
+  const { id, productName, brandDetails, price, condition } = order;
+
+  const generateMessage = (data) => {
+    return `Hello Team, I have ordered a new ${brandName} ${productName} which cost me ${price}. Let me know when will I get it?`;
+  };
+
+  console.log(generateMessage(order));
+</script>

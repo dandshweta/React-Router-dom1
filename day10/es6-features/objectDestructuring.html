@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  var profile = {
+    uName: "Ankit",
+    uCity: "Morena",
+    uState: "MP",
+  };
+
+  // ES5 Way
+  var userName = profile.uName;
+  var userCity = profile.uCity;
+  var userState = profile.uState || "MH";
+  var userCountry = profile.uCountry || "India";
+
+  console.log({ userName, userCity, userState, userCountry }, profile);
+</script>
+
+<script>
+  //ES6 way
+  const profile2 = {
+    uName: "Ankit",
+    uCity: "Morena",
+    uState: "MP",
+  };
+
+  const { uName, uCity, uState, uPhone = "India" } = profile2;
+
+  console.log({ uName, uCity, uState, uPhone, profile2 }, profile2);
+  console.log({ profile2 });
+</script>
+<script>
+  const flower = {
+    name: "rose",
+    color: "red",
+    price: 20,
+  };
+  const { name, color, price, city = "pune" } = flower;
+  console.log({ name, color, price, city });
+</script>
